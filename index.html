@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!--Additionals-->
+    <link rel="stylesheet" href="./css/boxicons.min.css">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <span class="material-icons-outlined me-1"></span>
+            <span class="text-primary fw-bold">Road</span><b><i>/vise.</i></b></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarsupportcontent" aria-controls="navbarsupportcontent" aria-expanded="false" aria-label="toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="container px-3">
+                <div class="collapse navbar-collapse" id="navbarsupportcontent">
+                    <ul class="navbar-nav ms-auto my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#about"><b>About</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#courses"><b>Courses</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#testimonials"><b>Testimonials</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="#teams"><b>Teams</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-lg-3" href="contact.html"><b>Reach Us</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-primary border-0 fw-bold" data-bs-toggle="modal" data-bs-target="#login" style="border-radius:500px;">Login</button>
+                        </li>
+
+                        <div id="login" class="modal fade">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        <div class="myform bg-dark">
+                                            <h1 class="text-center">Login</h1>
+                                            <form action="#">
+                                                
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--End Navbar-->
+
+
+    <!--carousel-->
+    
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(image2.jpg);" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent1">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold"><span class="text-primary text-uppercase fw-bold">road mishaps</span> has no age limit</h6>
+                        <h2 class="text-uppcase fw-bold display-4 text-white">Be a responsible <span class="text-primary fw-bold text-uppercase"> driver</span></h2>
+                        <a href="#about" class="btn btn-primary btn-sm fw-bold text-uppercase mt-2 mb-2">get started</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(Image1.jpg)" data-bs-interval="5000">
+            <div class="carousel-content text-end" id="carcontent2">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">What everyone think about</h6>
+                        <h2 class="display-4 text-white fw-bold"> The <span class="text-primary fw-bold">Road</span><i class="text-white fw-bold">/vise.</i> course</h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(trafficsign2.jpg)" data-bs-interval="5000">
+            <div class="carousel-content text-end" id="carcontent3">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">How important are</h6>
+                        <h2 class="display-4 text-white fw-bold"><span class="text-primary fw-bold">Traffic</span> rules</h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(speeding1.jpg)" data-bs-interval="5000">
+            <div class="carousel-content text-end" id="carcontent4">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Thinking about speeding? What about</h6>
+                        <h2 class="display-4 text-white fw-bold">Your<span class="text-primary fw-bold"> Family</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div><div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(bikeaccident.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent1">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Keep a low speed when driving in the city</h6>
+                        <h2 class="display-4 text-white fw-bold">Especially at<span class="text-primary fw-bold"> Night</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(yield.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent5">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Be a defensive driver</h6>
+                        <h2 class="display-4 text-white fw-bold text-uppercase">Yield <span class="text-primary fw-bold">Pedestrians</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(motogear.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent6">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">The anatomy of a </h6>
+                        <h2 class="display-4 text-white fw-bold"> Safety<span class="text-primary fw-bold"> Gear</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-cover min-vh-100" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(caraccident.jpg)" data-bs-interval="5000">
+            <div class="carousel-content" id="carcontent7">
+                <div class="row">
+                    <div class="col-12">  
+                        <h4 class="text-white fw-bold">Your family is waiting at home</h6>
+                        <h2 class="display-4 text-white fw-bold">Please Drive<span class="text-primary fw-bold"> Safely</span></h2>
+                        <a href="#courses" class="btn btn-primary btn-sm fw-bold mt-2 mb-2">View Courses</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-sm fw-bold mt-2 mb-2">Join our Community</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--End Carousel-->
+
+
+    <!--Hero-->
+
+    <section id="sectioninfo">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-md-8 col-xxl-6">
+                    <div class="row">
+                        <div class="col-12 info-box">
+                            <h2 class="text-center fw-bold mb-2 display-5">Welcome to <span class="fw-bold display-4"><span class="text-primary fw-bold">Road</span><i>/vise.</i></span></h2>
+                            <p class="lead text-muted text-center mb-4">The ultimate guide to become a responsible driver in the community</p>
+                            <div class="d-grid gap-3 mb-3 d-sm-flex justify-content-center">
+                                <a class="btn btn-primary btn-large btn-sm text-uppercase" href="#about">Learn more
+                                    <span class="material-icons-outlined ms-2">help_outline</span>
+                                </a>
+                                <a class="btn btn-outline-primary btn-large btn-sm text-uppercase" href="#courses">Become a reponsible driver
+                                    <span class="material-icons-outlined ms-2">school</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box col-xl-4 col-xxl-3 col-md-4 mb-1 justify-content-center">
+                    <img src="LogoRV.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Hero -->
+
+    <hr>
+
+    <main>
+        <!--About-->
+        <section id="about" class="text-center ">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold">About</h2>
+                    <p class="lead text-muted mb-5">This platform is intended to learn and improve situational awareness and skills of an aspiring Habal-habal driver. As well as to know the basic Do's and Dont's in any severe situations. </p>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="d-flex mb-5 about">
+                            <span class="material-icons-outlined m-auto text-primary">sports_kabaddi</span>
+                        </div>
+                        <h2>Mission</h2>
+                        <p class="text-muted mb-0">Our mission is to provide each student with the necessary information and techniques to be a SAFE RESPONSIBLE DRIVER.</p>            
+                        <br>
+                        <p class="text-muted mb-0"> To provide a learning friendly environment that meets the needs of everyone's learning style, and to provide the motoring public with RESPONSIBLE DRIVERS </p>          
+                    </div>
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="d-flex mb-5 about">
+                            <span class="material-icons-outlined m-auto text-primary">query_stats</span>
+                        </div>
+                        <h2>Vision</h2>
+                        <p class="text-muted mb-0">We envision a world where road users, pedestrians and motorists alike, would share the road and follow the rules on the road.</p>
+                        <br>
+                        <p class="text-muted mb-0"> We Aim provide the world with SAFE RESPONSIBLE DRIVERS to maintain a RISK AND INJURY FREE ENVIRONMENT. </p>                
+                    </div>
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="d-flex mb-5 about">
+                            <span class="material-icons-outlined m-auto text-primary">sports_score</span>
+                        </div>
+                        <h2>Goal</h2>
+                        <p class="text-muted mb-0">With years of experience and innovation, <span class="text-primary fw-bold">Road</span><b><i>/vise.</i></b> aim's to educate families and the community, in order to save lives and reduce injuries through organized curriculum, family involvement, and professional instruction. </p>                      
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+        <!--End About-->
+
+        <hr>
+
+        <!--Courses-->
+        <section id="courses align-items-center justify-content-center" class="py-5">
+            <div class="container text-center align-items-center py-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold">Courses</h2>
+                    <p class="lead text-muted mb-5">Here is a free online course intended for everyone to become a responsible driver</p>
+                </div>
+            </div>
+            <div class="container text-center mb-5">
+                <div class="row">
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="card h-100 shadow-lg border-0 bg-light">
+                            <img class="card img-top border-0 mx-auto mt-3" src="roadrules.png" alt="course #1">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">Road Rules and Safety</h5>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                </div>
+                                <p class="card-text">Road safety is important for all road users. </p>
+                                <p class="card-text">Every year more than one million people are injured in road accidents from all over the world. </p>
+                                <p class="card-text">This is a complete guide to become a responsible rider</p>
+                            </div>
+                            <div class="card-footer bg-transparent mb-3">
+                                <a class="btn btn-outline-primary btn-sm text-uppercase" href="#" traget="_blank">
+                                    <span class="material-icons-outlined me-1">cast_for_education</span> Start Learning
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="card h-100 shadow-lg border-0 bg-light">
+                            <img class="card img-top border-0 mx-auto mt-3" src="help.png" alt="course #2">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">The Proper Driving Etiquette</h5>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                </div>
+                                <p class="card-text">Driving Etiquette Starts with Unimpaired Driving.</p>
+                                <p class="card-text">By prioritizing your safety, you're already helping keep everyone else safe.</p>
+                                <p class="card-text">This is a complete guide to become a responsible rider</p>
+                            </div>
+                            <div class="card-footer bg-transparent mb-3">
+                                <a class="btn btn-outline-primary btn-sm text-uppercase" href="#" traget="_blank">
+                                    <span class="material-icons-outlined me-1">cast_for_education</span> Start Learning
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="card h-100 shadow-lg border-0 bg-light">
+                            <img class="card img-top border-0 mx-auto mt-3" src="driver.png" alt="course #3">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">The Responsible Driver</h5>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                </div>
+                                <p class="card-text">The Responsible Driver Program (RDP) is a remedial program for everyone.</p>
+                                <p class="card-text">Driving a car is a huge responsibility! It's a skill that requires constant practice. </p>
+                                <p class="card-text">A complete guide to become a responsible rider</p>
+                            </div>
+                            <div class="card-footer bg-transparent mb-3">
+                                <a class="btn btn-outline-primary btn-sm text-uppercase" href="#" traget="_blank">
+                                    <span class="material-icons-outlined me-1">cast_for_education</span> Start Learning
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container col-12 mx-auto mb-5 h-100 shadow-lg border-0 bg-light">
+                    <div class=" h-100 shadow-lg border-0 bg-light">
+                        <div class="course-image row align-items-center justify-content-end"  style="border-radius: 8px;">
+                            <div class="col-sm-12 col-md-7 col-lg-8 col-xl-9"></div>
+                            <div class="card-body col-sm-11 col-md-4 col-lg-3 p-4" style="background-color: rgba(0, 0, 0, 0.486) ; border-radius:10px;">
+                                <h2 class="card-title mb-3">"How to save a life program"</h5>
+                                    <p class="lead">By<span class="text-primary fw-bold">Road</span><b><i>/vise.</i></b></p>
+                                <div class="mb-2">
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                    <div class="badge bg-primary rounded-pill">Suki</div>
+                                </div>
+                                <div class="container-fluid mb-2">
+                                    <p class="card-text">Sudden situations on the road can lead to spontaneous reactions and thus, can cost a life.  </p>
+                                    <p class="card-text">Defensive Driving expert help you become a proactive driver instead of a reactive one and helps you deal with the situation calmly. </p>
+                                    <p class="card-text">This is a complete guide to become a responsible rider</p>
+                                </div>
+
+                                <hr> 
+                                <a class="btn btn-outline-light btn-sm text-uppercase mt-3 mb-3" href="#" traget="_blank">
+                                    <span class="material-icons-outlined me-1">cast_for_education</span> Start Learning
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </section>
+        <!--End Courses-->
+
+        <hr>
+
+        <!--Team-->
+
+        <section id="teams" class="text-center justify-content-center py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 intro text-center">
+                        <h6>OUR TEAM</h6>
+                        <h2 class="fw-bold">Meet Our Instructors</h2>
+                        <p class="lead text-muted mb-5">Our Instructors have many years of experience working as educators and youth service workers.  They all have, and understand the need to have a servants heart along with understanding of the many learning styles of young men and women</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <div class="img-wrapper">
+                                <img src="Instructor1.jpg" alt="Instructor1" id="contentins1" width="200px" height="300px">
+                                <div class="overlay"></div>
+                                <div class="social-links">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                          </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3><span class="text-primary lead fw-bold">Tomas Morato Shelby</span></h3>
+                                <h6>Former Formula 1 Champion</h6>
+                                <p class="text-muted"><i>"Everyone's a driver, we just drive a different paths of our dear lives"</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <div class="img-wrapper">
+                                <img src="instructor2.jpg" alt="Instructor1" id="contentins1" width="200px" height="300px">
+                                <div class="overlay"></div>
+                                <div class="social-links">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                          </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3><span class="text-primary lead fw-bold">Khajs Casero Jr.</span></h3>
+                                <h6>2012-2021 WSBK Champion</h6>
+                                <p class="text-muted"><i>"Mature rides are always the best"</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <div class="img-wrapper">
+                                <img src="instructor3.jpg" alt="Instructor1" id="contentins1" width="200px" height="300px">
+                                <div class="overlay"></div>
+                                <div class="social-links">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                          </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3><span class="text-primary lead fw-bold">Victor Magtangol</span></h3>
+                                <h6>Nascar Enthusiast</h6>
+                                <p class="text-muted"><i>"Night rides and a can of pepsi cola is the best ride you will ever have"</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--End Team-->
+
+        <!--Milestone-->
+        
+        <section class="bg-cover3 " id="milestone">
+            <div class="container">
+                <div class="row gy-4 justify-content-center text-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="display-2"><b>8567</b></div>
+                        <p class="mb-0">Happy Clients</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="display-2"><b>36K+</b></div>
+                        <p class="mb-0">Downloads</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="display-2"><b>460K+</b></div>
+                        <p class="mb-0">Active Community</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="display-2"><b>1.6M</b></div>
+                        <p class="mb-0">Followers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--End Milestone-->
+
+
+
+        <!--Testimonials-->
+        <section id="testimonials" class="text-center py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold">Testimonials</h2>
+                    <p class="lead text-muted mb-5">Hear from our successful graduates</p>
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="text-center fs-4 fst-italic mb-4 px-2">
+                            Payb Tao San! Lorem ipsum dolor sit amet consectetur adipisicing elit. Bigyan ng jacket yan!
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center testimonial">
+                            <img class="rounded-circle me-2" src="funnycycle1.jpg" alt="user1"> 
+                            <div class="fw-bold">
+                                Willie 
+                                <span class="text-primary mx-1">/</span>
+                                TV Host, Wowowin
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="text-center fs-4 fst-italic mb-4 px-2">
+                            Payb Tao San! Lorem ipsum dolor sit amet consectetur adipisicing elit. Bigyan ng jacket yan!
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center testimonial">
+                            <img class="rounded-circle me-2" src="funnycycle1.jpg" alt="user1"> 
+                            <div class="fw-bold">
+                                Willie 
+                                <span class="text-primary mx-1">/</span>
+                                TV Host, Wowowin
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mx-auto mb-5">
+                        <div class="text-center fs-4 fst-italic mb-4 px-2">
+                            Payb Tao San! Lorem ipsum dolor sit amet consectetur adipisicing elit. Bigyan ng jacket yan!
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center testimonial">
+                            <img class="rounded-circle me-2" src="funnycycle1.jpg" alt="user1"> 
+                            <div class="fw-bold">
+                                Willie 
+                                <span class="text-primary mx-1">/</span>
+                                TV Host, Wowowin
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!--End Testimonials-->
+
+        <hr>
+
+        <!--contact form-->
+
+        <section id="testimonials" class="text-center py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h6 class="text-primary">REACH US</h5>
+                    <h2 class="fw-bold">Get In Touch</h2>
+                    <p class="lead text-muted mb-5">Interested? If you would like to hear more from us, feel free to reach out! <br> Join our community and get a chance to win an exclusive gift from <span class="text-primary fw-bold">Road</span><b><i>/vise.</i></b></p>
+                </div>
+            </div>
+            <div class="container col-12 mx-auto mb-5 h-100 shadow-lg border-0 bg-light">
+                <div class=" h-100 shadow-lg border-0 bg-light">
+                    <div class="map-image row align-items-center justify-content-end" style="border-radius: 8px;">
+                        <div class="col-sm-12 col-md-7 col-lg-8 col-xl-9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63352.177310467836!2d125.6063222!3d7.0665844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d0b327d9ac9%3A0xaab576d0b5fab52!2sMabini%20St%2C%20Poblacion%20District%2C%20Davao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1670343712263!5m2!1sen!2sph" width="100%" height="725" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <form action="#" class="card-body col-sm-11 col-md-4 col-lg-3 p-4" style="background-color: rgba(0, 0, 0, 0.486) ; border-radius:3px;">
+                            <h2 class="fw-bold">Contact Us</h2>
+                            <p class="lead mb-5"> <a href="index.html" style="text-decoration:none"><span class="text-primary fw-bold">Road</span><span class="text-white"><b><i>/vise</i></b></span></a> loves to hear from you!</p>
+
+                            <div class="row">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name"  placeholder="Enter Name">
+                                    <label for="name" class="form-label">Full Name</label>
+                                </div>
+                            
+                                <div class="form-floating">
+                                    <input type="email" placeholder="Email" class="form-control" id="email">
+                                    <label for="name" class="form-label">Email</label>
+                                </div>
+    
+                                <div class="form-floating">
+                                    <input type="number" placeholder="Contact Number" class="form-control" id="number">
+                                    <label for="number" class="form-label">Contact Number</label>
+                                </div>
+    
+                                <div class="form-floating">
+                                    <input type="text" placeholder="Subject" class="form-control" id="subject">
+                                    <label for="subject" class="form-label">Subject</label>
+                                </div>
+    
+                                <div class="form">
+                                    <textarea placeholder="Message" class="form-control fw-bold" name="Message" id="" cols="30" rows="5" id="Message"></textarea>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="social-menu">
+                                <div class="social-links-footer">
+                                    <h6>Follow Us</h6>
+                                    <a href="#" class="mb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#" class="mb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#" class="mb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#" class="mb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                          </svg>
+                                    </a>
+                                    <a href="#" class="mb-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                                            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                                          </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="col-6 col-md-5 col-lg-4 d-flex justify-content-end mt-3">
+                                <button type="submit" class="btn btn-outline-light btn-sm text-uppercase mt-3 mb-3" href="mailto: Siedjeremiahibarra@gmail.com">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--End contact form-->
+
+        <!--News-->
+
+        <section class="section-subscribe bg-light">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-mb-12 mb-4">
+                        <h1 class="heading1">
+                            Get news &amp; updates
+                        </h1>
+                    </div>
+
+                    <div class="col-md-12">
+                        <form action="" method="POST">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <input type="text" class="form-control form-control-sm " placeholder="Name">
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <input type="email" class="form-control form-control-sm" placeholder="Email">
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <input type="submit" class="btn btn-primary fw-bold btn-sm w-100" value="Subscribe">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!--End News-->
+
+        <!--Footer-->
+
+        <footer class="site-footer">
+            <div class="container mt-5">
+                <div class="row mb-0 justify-content-center">
+                    <div class="col-md-5 col-lg-4 mb-2">
+                        <div class="row align-items-center text-center">
+                            <div class=" col-md-5 col-lg-5 col-xl-4 me-3 align-items-baseline">
+                                <h2><span class="text-primary fw-bold">Road</span><b><i>/vise.</i></b></h3>
+                            </div>
+                            <div class="footer-image  col-md-5 col-lg-5 col-xl-4">
+                                <img src="LogoRV.png">
+                            </div>
+                        </div>
+                        <p class="lead">The ultimate guide to become a responsible driver in the community</p>
+                        <p><a href="contact.html" class="btn btn-outline-primary btn-sm fw-bold">Reach Us</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mb-2 ml-2 text-center justify-content-center">
+                        <h4 class="text-primary fw-bold ">Contact &amp; Address</h4>
+                        <ul class="list-unstyled footer-link text-center justify-content-center">
+                            <li>
+                                <span class="me-3">Adress:</span><span class="text-center justify-content-center">1515 Ave. Uwu City, Uwunation</span>
+                            </li>
+    
+                            <li>
+                                <span class="me-3">Contact Number:</span><span class="text-center justify-content-center">(+63) 909 090 9090</span>
+                            </li>
+    
+                            <li>
+                                <span class="me-3">Email Address:</span><span class="text-center justify-content-center">Uwu_1515@mail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3 col-lg-2 col-xl-2 mb-2 text-center justify-content-center">
+                        <h4 class="text-primary fw-bold">Quick Links</h4>
+                        <ul class="list-unstyled footer-link" id="footerlink">
+                            <li><a href="index.html" style="text-decoration:none;">Home</a></li>
+                            <li><a href="#about" style="text-decoration:none;">About</a></li>
+                            <li><a href="#courses" style="text-decoration:none;">Courses</a></li>
+                            <li><a href="#teams" style="text-decoration:none;">Teams</a></li>
+                            <li><a href="#testimonials" style="text-decoration:none;">Testimonials</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3 col-xl-3 text-center">
+                        <h4 class="text-primary fw-bold mb-3">Follow us</h4>
+                        <ul class="list-unstyled footer-link d-flex text-center align-items-center justify-content-center">
+                            <div class="social-links-footer">
+                                <a href="#" class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                      </svg>
+                                </a>
+                                <a href="#" class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                      </svg>
+                                </a>
+                                <a href="#" class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                      </svg>
+                                </a>
+                                <a href="#" class="mb-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                      </svg>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+
+                <div class="row">
+                    <div class="col-12 text-center text-left">
+                        <p class="lead text-muted"><span class="text-primary fw-bold">Road</span><b><i>/vise.</i> &copy; 2022 all rights reserved </b></p>
+                    </div>
+                </div>
+            </div>
+
+                
+        </footer>
+
+        <!--End Footer-->
+
+
+    </main>
+
+    <!--Bootstrap 5 JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!--Additionals-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    
+
+</body>
+</html>

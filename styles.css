@@ -1,0 +1,378 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat";
+}
+
+.material-icons-outlined {
+    vertical-align: middle;
+    line-height: 1px;
+}
+
+.navbar-nav a:hover {
+    color: rgb(4, 108, 255);
+}
+
+.navbar-brand > .material-icons-outlined {
+    font-size:40px;
+}
+
+.nav-item > button {
+    color:#807d7d;
+    font-size: 100%;
+}
+
+.nav-item > button:hover {
+    background:  rgb(6, 110, 255) !important;
+    color: white;
+}
+
+.about > .material-icons-outlined {
+    font-size: 50px;
+}
+
+.card > img {
+    height: 50%;
+    width:50%;
+}
+
+.course-image {
+   height:100%;
+   width:auto;
+   padding: 1em 0;
+   background:linear-gradient(rgba(2, 9, 31, 0.438),rgba(0, 9, 39, 0.527)), url(savealife.jpg);
+   color: #ffffff;
+   background-position:center !important;
+   background-size:cover !important;
+}
+
+.map-image {
+    height:100%;
+   width:auto;
+   padding: 1em 0;
+   background:linear-gradient(rgba(2, 9, 31, 0.438),rgba(0, 9, 39, 0.527)), url(image2.jpg);
+   color: #ffffff;
+   background-position:center !important;
+   background-size:cover !important;
+}
+
+.testimonial > img {
+    height: 50px;
+    width: 50px;
+}
+
+#loginbtn {
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+
+/*Slider*/
+
+.carousel-item {
+    position:relative;
+}
+.carousel-content{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom:50px;
+}
+
+#carcontent1 {
+    margin-left: 8%;
+    margin-right: 8%;  
+    margin-bottom: 7%;
+}
+
+#carcontent2 {
+    margin-left: 13%;
+    margin-right: 8%;
+    margin-bottom: 7%;
+}
+
+#carcontent3 {
+    margin-left: 13%;
+    margin-right: 8%;
+    margin-bottom: 7%;
+}
+
+#carcontent4 {
+    margin-left: 13%;
+    margin-right: 8%;
+    margin-bottom: 7%;
+}
+
+#carcontent5 {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 12%;
+}
+
+#carcontent6 {
+    margin-left: 10%;
+    margin-right: 8%;
+    margin-bottom: 9%;
+}
+
+#carcontent7 {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 7%;
+}
+
+.carousel-control-prev {
+    padding: 0;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    top:50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display:grid !important;
+    position:absolute !important;
+    place-items: center !important;
+    background-color:rgba(0, 10, 24, 0.363) !important;
+    border-radius: 100px;
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    background-color: rgb(6, 110, 255) !important;
+}
+
+.carousel {
+    
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.308);
+}
+
+/*Infobox*/
+
+#sectioninfo {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.info-box {
+    align-items: center;
+}
+
+.info-box img {
+    width:100%;
+    height:100%;
+}
+
+/*Milestone*/
+
+.bg-cover3 {
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#milestone {
+    background:linear-gradient(rgba(1, 19, 77, 0.747),rgba(1, 18, 73, 0.863)), url(speeding1.jpg);
+    padding:70px;
+}
+
+#milestone .display-2 {
+    font-weight: 530;
+}
+
+#milestone .display-2, 
+#milestone p {
+    color:beige;
+}
+
+/*Teams*/
+
+.team-member .img-wrapper {
+    position:relative;
+    overflow: hidden;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(240, 248, 255, 0.4);
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    border-radius: 60%;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    background-color: antiquewhite;
+    color:rgb(0, 132, 255);
+}
+.team-member .overlay {
+    position: absolute;
+    top:-30;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to right, white,rgba(255, 255, 255, 0.1),rgba(6, 6, 80, 0.2),rgba(6, 6, 80, 0.2),rgba(6, 6, 80, 0.2),rgba(6, 6, 80, 0.2),rgba(255, 255, 255, 0.1),white);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+    top:0; 
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    top: 50%; 
+}
+
+.team-member .social-links {
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member h5{
+    margin-top: 24px;
+}
+
+/*Footer*/
+
+.section-subscribe {
+    padding: 5em 0;
+}
+ 
+.card-body .form-control {
+    outline: none;
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(134, 131, 131);
+    color:rgb(153, 149, 149);
+}
+
+.form-control:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    background-color: transparent !important;
+}
+
+.form-control:focus .form-control:active {
+    outline: none;
+    background-color: transparent !important;
+}
+
+.btn {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+}
+
+.btn.btn-primary {
+    color: #fff;
+    border-width:2px;
+    background: rgb(2, 110, 255);
+    border-color: rgb(2, 110, 255);
+    padding:3px;
+}
+
+.site-footer {
+    padding: 1em 0;
+    background:linear-gradient(rgba(2, 9, 31, 0.945),rgb(0, 9, 39)), url(savealife.jpg);
+    color: #b2d0f7;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#footerlink a {
+    color:#b2d0f7;
+}
+
+#footerlink a:hover {
+    color:rgb(2, 110, 255);
+}
+
+.social-links-footer a {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(142, 202, 255, 0.397);
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:#b2d0f7;
+    border-radius: 60%;
+    transition: all 0.4s ease;
+}
+
+.social-links-footer a:hover {
+    background-color: rgb(2, 110, 255);
+    color:rgb(255, 255, 255);
+}
+
+.footer-image {
+    align-items: center;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.footer-image img {
+    width:80%;
+    height:80%;
+}
+
+/*Data circle*/
+
+
+
+/*Hovers*/
+
+a {
+    text-decoration: none;
+    color: var(--light)
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: unset;
+}
+#section10 {
+    display: flex;
+    align-items: bottom;
+    height: 100vh;
+    padding: 6em 0;
+    margin-top: 10px;
+}
+
+
+.map-image iframe {
+    filter: invert(1) grayscale(100%);
+}
+
+.main-content {
+    position: relative; 
+    top:10%;
+    z-index: 22;
+    width: fit-content;
+    color: var(--light);
+}
+
+#card1 {
+    background-color: rgb(155, 154, 154);
+    border-radius: 10px;
+}
