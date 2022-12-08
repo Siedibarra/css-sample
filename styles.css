@@ -274,6 +274,67 @@ body{
     background-color: transparent !important;
 }
 
+
+.form-floating .form-control {
+    outline:none;
+    background-color:transparent;
+    color:#fff;
+    border-width: 0 0 2px 0;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(134, 131, 131);
+}
+
+.form-floating .form-control:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    background-color: transparent !important;
+}
+
+.form-floating .form-control:active {
+    outline: none;
+    background-color: transparent !important;
+}
+
+/*modal*/
+
+.modal-forget {
+    color:#fff;
+}
+
+.modal-forget a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.myform {
+    max-width: 100%;
+}
+
+#modal-login {
+    padding:0px;
+}
+
+#modalcontentlogin {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.myform {
+    padding:2em;
+    max-width: 100%;
+    color: white;
+}
+
+/*sign up*/
+
+.signup {
+    padding:px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    max-width: 100%;
+    color: rgb(8, 8, 8);
+}
+
 .btn {
     -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
     box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
