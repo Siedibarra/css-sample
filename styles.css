@@ -532,3 +532,11 @@ a:focus {
     background-position: center !important;
     background-size:cover !important;
 }
+
+.forum2-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(popo.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
