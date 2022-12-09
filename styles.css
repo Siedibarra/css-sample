@@ -481,3 +481,45 @@ a:focus {
     background-position: center !important;
     background-size:cover !important;
 }
+
+.content5-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(caraccident.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content6-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(motogear.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content7-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(image2.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+/*Testimonials*/
+
+#cartest {
+    height:100%;
+    background:#f7f7f7;
+    position:relative;
+}
+
+/*Forums*/
+
+.forum1-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(speeding1.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
