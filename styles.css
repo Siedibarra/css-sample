@@ -162,6 +162,7 @@ body{
 
 .info-box {
     align-items: center;
+    justify-content: center;
 }
 
 .info-box img {
@@ -436,4 +437,47 @@ a:focus {
 #card1 {
     background-color: rgb(155, 154, 154);
     border-radius: 10px;
+}
+
+/*road rules and safety*/
+
+.site-content-1 {
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.site-content-2 {
+    border-radius: 15px;
+}
+
+.content1-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(roadrulesandsafety.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content2-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(etiquette.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content3-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(responsibledriver.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content4-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(savealife.jpg);
+    background-position: center !important;
+    background-size:cover !important;
 }
