@@ -56,9 +56,18 @@ body{
    background-size:cover !important;
 }
 
-.testimonial > img {
-    height: 50px;
-    width: 50px;
+.testimonial-image2 > img {
+    height: 60%;
+    width: 60%;
+    background-position:center !important;
+   background-size:cover !important;
+}
+
+.testimonial-image3 > img {
+    height: 100%;
+    width: 100%;
+    background-position:center !important;
+   background-size:cover !important;
 }
 
 #loginbtn {
