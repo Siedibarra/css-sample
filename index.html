@@ -65,20 +65,25 @@
                                     <div class="modal-body" id="modal-login">
                                         <div class="myform">
                                             <h1 class="text-center text-white">Login</h1>
-                                            <form action="#">
+                                            <form class="needs-validation" novalidate>
                                                 <div>
                                                     <div class="form-floating mb-3 mt-3">
                                                         <input type="email" class="form-control text-white" id="email" placeholder="Enter Email" required>
                                                         <label for="email" class="form-label text-white">Email</label>
+                                                        <div class="valid-feedback"> Valid </div>
+                                                        <div class="invalid-feedback">Please Enter Email</div>
                                                     </div>
 
                                                     <div class="form-floating mb-3 mt-3">
                                                         <input type="password" class="form-control text-white" id="password" placeholder="Enter Password" required>
                                                         <label for="password" class="form-label text-white">Password</label>
+                                                        <div class="valid-feedback"> Valid </div>
+                                                        <div class="invalid-feedback">Please Enter Password</div>
                                                     </div>
 
-                                                    <div class="mt-5 mb-5">
-                                                        <button type="submit" class="btn btn-outline-light fw-bold w-100">Login</button>
+                                                    <div class="register mt-5 mb-5">
+                                                        <input type="submit" class="btn btn-outline-light fw-bold w-100 mb-5" Value="Login" id="signupsubmit">
+                                                        
                                                     </div>
 
                                                     <div class="modal-forget mt-3 mb-3">
@@ -743,33 +748,45 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63352.177310467836!2d125.6063222!3d7.0665844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d0b327d9ac9%3A0xaab576d0b5fab52!2sMabini%20St%2C%20Poblacion%20District%2C%20Davao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1670343712263!5m2!1sen!2sph" width="100%" height="725" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="card-body col-sm-11 col-md-4 col-lg-3 p-4" style="background-color: rgba(0, 0, 0, 0.486) ; border-radius:3px;">
-                            <form action="#">
+                           
+                            <form class="needs-validation" novalidate>
+
                                 <h2 class="fw-bold">Contact Us</h2>
                                 <p class="lead mb-5"> <a href="index.html" style="text-decoration:none"><span class="text-primary fw-bold">Road</span><span class="text-white"><b><i>/vise</i></b></span></a> loves to hear from you!</p>
     
                                 <div class="row">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name"  placeholder="Enter Name">
+                                        <input type="text" class="form-control text-white" id="name"  placeholder="Enter Name" required>
                                         <label for="name" class="form-label">Full Name</label>
+                                        <div class="valid-feedback"> Valid </div>
+                                        <div class="invalid-feedback">Please enter your Name</div>
                                     </div>
                                 
                                     <div class="form-floating">
-                                        <input type="email" placeholder="Email" class="form-control" id="email">
+                                        <input type="email" placeholder="Email" class="form-control text-white" id="email" required>
                                         <label for="name" class="form-label">Email</label>
+                                        <div class="valid-feedback"> Valid </div>
+                                        <div class="invalid-feedback">Please enter your Email</div>
                                     </div>
         
                                     <div class="form-floating">
-                                        <input type="number" placeholder="Contact Number" class="form-control" id="number">
+                                        <input type="number" placeholder="Contact Number" class="form-control text-white" id="number" required>
                                         <label for="number" class="form-label">Contact Number</label>
+                                        <div class="valid-feedback"> Valid </div>
+                                        <div class="invalid-feedback">Please enter your Number</div>
                                     </div>
         
                                     <div class="form-floating">
-                                        <input type="text" placeholder="Subject" class="form-control" id="subject">
+                                        <input type="text" placeholder="Subject" class="form-control text-white" id="subject" required>
                                         <label for="subject" class="form-label">Subject</label>
+                                        <div class="valid-feedback"> Valid </div>
+                                        <div class="invalid-feedback">Please enter your subject</div>
                                     </div>
         
                                     <div class="form">
-                                        <textarea placeholder="Message" class="form-control fw-bold" name="Message" id="" cols="30" rows="5" id="Message"></textarea>
+                                        <textarea placeholder="Message" class="form-control fw-bold text-white" name="Message" id="" cols="30" rows="5" id="Message" required></textarea>
+                                        <div class="valid-feedback"> Valid </div>
+                                        <div class="invalid-feedback">Wanna say something?</div>
                                     </div>
                                 </div>
     
@@ -808,8 +825,8 @@
     
                                 </div>
     
-                                <div class="col-6 col-md-5 col-lg-4 d-flex justify-content-end mt-3">
-                                    <button type="submit" class="btn btn-outline-light btn-sm text-uppercase mt-3 mb-3" href="mailto: Siedjeremiahibarra@gmail.com">Submit</button>
+                                <div class="register col-12 mt-3 d-flex justify-content-end">
+                                    <input type="submit" class="btn btn-outline-light btn-sm text-uppercase mt-3 mb-3 w-100" value="Submit" id="contactsubmit">
                                 </div>
     
                             </form>
@@ -958,7 +975,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <!--Additionals-->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
     
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+    
+    </script>
 
 </body>
 </html>
